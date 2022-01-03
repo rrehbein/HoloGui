@@ -160,7 +160,7 @@ public class HoloGuiRenderTools {
 //            GlStateManager.activeTexture(GLX.GL_TEXTURE1);
 
 //            Minecraft.getInstance()().getTextureManager().bind(new ResourceLocation(Ariente.MODID, "textures/gui/darken.png"));
-            textureManager.bindForSetup(lightmap);
+            RenderSystem.setShaderTexture(1, lightmap);
             // @todo 1.15
 //            GlStateManager.activeTexture(GLX.GL_TEXTURE0);
         }
